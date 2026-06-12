@@ -1,0 +1,37 @@
+/* Lorewells — Design Tokens
+   Source of truth: Lorewells_Design_Direction.md §11.
+   Drop into globals.css (or import) and map into the Tailwind theme.
+   Fonts (Google Fonts): Newsreader, Hanken Grotesk, IBM Plex Mono. */
+
+:root {
+  /* color */
+  --ink:    #15110D; /* primary ground — the dark room (warm near-black) */
+  --depth:  #0F1C1A; /* alternate dark section — "well water" green-black */
+  --key:    #E0A94A; /* THE accent — tungsten key-light gold; treat as light */
+  --ember:  #B5663A; /* secondary warm — use sparingly, max one moment/section */
+  --bone:   #ECE7DB; /* lifted archival paper — body text on dark; rare lift bg */
+  --mist:   #A9A294; /* muted text/metadata on dark — large/secondary only */
+
+  /* type */
+  --font-display: "Newsreader", Georgia, serif;          /* emotion + names */
+  --font-body:    "Hanken Grotesk", system-ui, sans-serif; /* everything functional */
+  --font-mono:    "IBM Plex Mono", ui-monospace, monospace; /* facts / catalog ledger */
+
+  /* scale (fluid) */
+  --fs-hero: clamp(2.75rem, 7vw, 6.5rem);
+  --fs-h1:   clamp(2.25rem, 4.5vw, 3.75rem);
+  --fs-h2:   clamp(1.75rem, 3vw, 2.5rem);
+  --fs-h3:   1.375rem;
+  --fs-body-l: 1.1875rem;
+  --fs-body:   1.0625rem;
+  --fs-small:  0.9375rem;
+  --fs-meta:   0.75rem;
+
+  /* spacing (8-based) */
+  --s-1: .5rem; --s-2: 1rem; --s-3: 1.5rem; --s-4: 2.5rem;
+  --s-5: 4rem;  --s-6: 6rem; --s-7: 8rem;
+
+  --maxw: 1280px;
+  --radius: 4px;
+  --grain-opacity: .05;
+}

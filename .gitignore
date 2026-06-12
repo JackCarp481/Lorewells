@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json
+
+# Dependencies / build output (in case a Next.js app lands here later)
+node_modules/
+.next/
+dist/
+build/
+*.log
