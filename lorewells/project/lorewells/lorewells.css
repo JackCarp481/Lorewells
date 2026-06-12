@@ -311,11 +311,13 @@ section[id] { scroll-margin-top: 72px; }
   font-family: var(--font-display);
   font-weight: 500;
   font-size: var(--fs-hero);
-  line-height: 1.02;
+  line-height: 1.08;
   letter-spacing: -0.015em;
   color: var(--bone);
   text-shadow: 0 0 70px rgba(224,169,74,.30);
   text-wrap: pretty;
+  /* small cushion so tall caps (E, P, L…) never clip at the top in WebKit/Safari */
+  padding-top: 0.06em;
 }
 body[data-gold-headline="on"] .hero h1 {
   color: var(--key);
