@@ -1,0 +1,4 @@
+{
+  "buildCommand": "rm -rf dist && cp -R 'lorewells/project' dist && mv 'dist/Lorewells Homepage.html' dist/index.html && rm -rf dist/screenshots dist/.thumbnail && sed -i -e '/unpkg.com/d' -e '/tweaks/d' dist/index.html",
+  "outputDirectory": "dist"
+}
